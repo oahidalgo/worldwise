@@ -1,0 +1,15 @@
+.nav {
+  background-color: orangered;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+/*never use html elements selectors cause it will select the elements
+ of the entire app instead of just only the component*/
+
+.nav :global(.active) {
+  background-color: green;
+}
